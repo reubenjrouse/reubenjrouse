@@ -2,6 +2,7 @@
 
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 import {
   Sheet,
   SheetContent,
@@ -10,10 +11,19 @@ import {
 
 const navItems = [
   { label: "About", href: "#about" },
-  { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
+
+const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  e.preventDefault();
+  const element = document.querySelector(href);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 
 export function Navbar() {
   return (
@@ -31,15 +41,17 @@ export function Navbar() {
             <a
               key={item.href}
               href={item.href}
-              className="text-muted-foreground hover:text-foreground transition"
-            >
+              onClick={(e) => handleNavClick(e, item.href)}
+              className="text-muted-foreground hover:text-foreground transition cursor-pointer">
               {item.label}
             </a>
           ))}
+          <ThemeToggle />
         </nav>
 
         {/* Mobile Nav */}
-        <div className="md:hidden">
+        <div className="md:hidden flex items-center gap-2">
+          <ThemeToggle />
           <Sheet>
             <SheetTrigger asChild>
               <Button size="icon" variant="ghost">
@@ -52,7 +64,8 @@ export function Navbar() {
                   <a
                     key={item.href}
                     href={item.href}
-                    className="text-lg font-medium"
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="text-lg font-medium cursor-pointer"
                   >
                     {item.label}
                   </a>

@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
   
 export function HeroSection04() {
   return (
-    <section className="min-h-screen pt-16 overflow-hidden relative py-20">
+    <section id="about" className="min-h-screen pt-16 overflow-hidden relative py-20">
       <div className="mx-auto max-w-7xl relative z-20 px-6">
         <div className="relative ">
           <h1
@@ -15,18 +15,18 @@ export function HeroSection04() {
             <br />
             ROUSE
           </h1>
-          <p className="text-4xl hidden xl:block absolute -bottom-12 right-5 font-thin tracking-[6px]">
+          <p className="text-4xl hidden xl:block absolute -bottom-12 right-5 font-light tracking-[0.25em]">
             ML Engineer
           </p>
-          <p className="text-4xl absolute xl:hidden -bottom-12 left-32 font-thin tracking-[6px]">
+          <p className="text-4xl absolute xl:hidden -bottom-12 left-32 font-light tracking-[0.25em]">
             ML Engineer
           </p>
         </div>
 
         <div className="grid relative">
           <div className="space-y-8 pt-20 flex gap-6 justify-center">
-            <div className="flex gap-6 bg-secondary w-full max-w-xl h-fit p-10 items-end space-y-2 text-xl font-bold md:text-2xl lg:text-3xl">
-              <div className="font-semibold text-xl">
+            <div className="flex gap-6 bg-secondary w-full max-w-xl h-fit p-10 items-end space-y-2 text-xl font-semibold md:text-2xl lg:text-3xl">
+              <div className="font-semibold text-xl font-mono">
                 <div>/ MACHINE LEARNING</div>
                 <div>/ COMPUTER VISION</div>
                 <div>/ AGENTIC AI</div>
@@ -35,9 +35,9 @@ export function HeroSection04() {
                 <img
                   src="/images/pfp.jpg"
                   alt="Designer portrait"
-                  className="h-100 w-full object-contain grayscale"
+                  className="h-100 w-full object-contain"
                 />
-                <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-widest">
+                <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-[0.2em]">
                   BASED IN MUMBAI
                 </div>
               </div>
@@ -47,16 +47,16 @@ export function HeroSection04() {
             <img
               src="https://raw.githubusercontent.com/aliimam-in/aliimam/refs/heads/main/apps/www/public/ai.jpg"
               alt="Designer portrait"
-              className="h-100 w-full object-contain grayscale"
+              className="h-100 w-full object-contain"
             />
-            <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-widest">
+            <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-[0.2em]">
               BASED IN MUMBAI
             </div>
           </div>
         </div>
 
-        <div className="md:mt-40 mt-10">
-          <p className="mx-auto max-w-2xl font-mono text-center text-sm font-medium tracking-wide md:text-base">
+        <div className="mt-32">
+          <p className="mx-auto max-w-2xl font-mono text-center text-sm md:text-base text-muted-foreground">
             Experience with LLM fine tuning, agentic AI and computer vision projects.
             <br />
             Actively exploring ML research and looking to contribute to meaningful projects.

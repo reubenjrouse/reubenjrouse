@@ -100,14 +100,14 @@ const Gallery4 = ({
   }, [carouselApi]);
 
   return (
-    <section className="py-40">
-      <div className="container mx-auto">
-        <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
+    <section id="projects" className="py-20">
+      <div className="container mx-auto max-w-7xl px-6">
+        <div className="mb-16 flex items-end justify-between">
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tight md:text-4xl lg:text-5xl">
               {title}
             </h2>
-            <p className="max-w-lg text-muted-foreground font-mono">{description}</p>
+            <p className="max-w-lg text-muted-foreground font-mono text-sm md:text-base">{description}</p>
           </div>
           <div className="hidden shrink-0 gap-2 md:flex">
             <Button
@@ -134,19 +134,18 @@ const Gallery4 = ({
             </Button>
           </div>
         </div>
-      </div>
-      <div className="w-full">
-        <Carousel
-          setApi={setCarouselApi}
-          opts={{
-            breakpoints: {
-              "(max-width: 768px)": {
-                dragFree: true,
+        <div className="w-full overflow-hidden">
+          <Carousel
+            setApi={setCarouselApi}
+            opts={{
+              breakpoints: {
+                "(max-width: 768px)": {
+                  dragFree: true,
+                },
               },
-            },
-          }}
-        >
-          <CarouselContent className="ml-0 2xl:ml-[max(8rem,calc(50vw-700px))] 2xl:mr-[max(0rem,calc(50vw-700px))]">
+            }}
+          >
+            <CarouselContent className="ml-0">
             {items.map((item) => (
               <CarouselItem
                 key={item.id}
@@ -161,10 +160,10 @@ const Gallery4 = ({
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/5" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
-                      <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
+                      <div className="mb-2 pt-4 text-xl font-bold md:mb-3 md:pt-4 lg:pt-4">
                         {item.title}
                       </div>
-                      <div className="mb-8 line-clamp-2 font-mono md:mb-12 lg:mb-9">{item.description}</div>
+                      <div className="mb-8 line-clamp-2 font-mono text-sm md:mb-12 lg:mb-9">{item.description}</div>
 
                       <div className="flex items-center text-sm font-mono">
                         Read more{" "}
@@ -188,6 +187,7 @@ const Gallery4 = ({
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
+        </div>
         </div>
       </div>
     </section>
