@@ -18,7 +18,7 @@ export function HeroSection04() {
           <p className="text-4xl hidden xl:block absolute -bottom-12 right-5 font-light tracking-[0.25em] z-30">
             ML Engineer
           </p>
-          <p className="text-4xl absolute xl:hidden -bottom-12 left-32 font-light tracking-[0.25em] z-30">
+          <p className="text-4xl absolute xl:hidden -bottom-12 left-32 font-light tracking-[0.25em] z-30 whitespace-nowrap">
             ML Engineer
           </p>
         </div>
