@@ -100,14 +100,14 @@ const Gallery4 = ({
   }, [carouselApi]);
 
   return (
-    <section className="py-32">
+    <section className="py-40">
       <div className="container mx-auto">
         <div className="mb-8 flex items-end justify-between md:mb-14 lg:mb-16">
           <div className="flex flex-col gap-4">
-            <h2 className="text-3xl font-medium md:text-4xl lg:text-5xl">
+            <h2 className="text-3xl font-semibold tracking-tight md:text-4xl lg:text-5xl">
               {title}
             </h2>
-            <p className="max-w-lg text-muted-foreground">{description}</p>
+            <p className="max-w-lg text-muted-foreground font-mono">{description}</p>
           </div>
           <div className="hidden shrink-0 gap-2 md:flex">
             <Button
@@ -159,15 +159,14 @@ const Gallery4 = ({
                       alt={item.title}
                       className="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/5" />
                     <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
                       <div className="mb-2 pt-4 text-xl font-semibold md:mb-3 md:pt-4 lg:pt-4">
                         {item.title}
                       </div>
-                      <div className="mb-8 line-clamp-2 md:mb-12 lg:mb-9">
-                        {item.description}
-                      </div>
-                      <div className="flex items-center text-sm">
+                      <div className="mb-8 line-clamp-2 font-mono md:mb-12 lg:mb-9">{item.description}</div>
+
+                      <div className="flex items-center text-sm font-mono">
                         Read more{" "}
                         <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                       </div>
