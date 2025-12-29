@@ -11,14 +11,16 @@ interface Contact2Props {
   title?: string;
   description?: string;
   email?: string;
-  web?: { label: string; url: string };
+  linkedin?: { label: string; url: string };
+  github?: { label: string; url: string };
 }
 
 export const Contact2 = ({
   title = "Contact Us",
   description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
   email = "email@example.com",
-  web = { label: "shadcnblocks.com", url: "https://shadcnblocks.com" },
+  linkedin = { label: "linkedin.com", url: "https://linkedin.com" },
+  github = { label: "github.com", url: "https://github.com" },
 }: Contact2Props) => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -83,9 +85,15 @@ export const Contact2 = ({
                   </a>
                 </li>
                 <li>
-                  <span className="font-bold text-foreground">Web: </span>
-                  <a href={web.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition">
-                    {web.label}
+                  <span className="font-bold text-foreground">LinkedIn: </span>
+                  <a href={linkedin.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition">
+                    {linkedin.label}
+                  </a>
+                </li>
+                <li>
+                  <span className="font-bold text-foreground">GitHub: </span>
+                  <a href={github.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground transition">
+                    {github.label}
                   </a>
                 </li>
               </ul>

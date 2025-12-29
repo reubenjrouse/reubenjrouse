@@ -74,8 +74,8 @@ const data = [
 ];
 
 const Gallery4 = ({
-  title = "Case Studies",
-  description = "Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
+  title = "Projects",
+  description = "Explore my projects where I attempt to solve real-world problems through hands-on machine learning and AI applications. Each project reflects practical experience in tackling diverse challenges.",
   items = data,
 }: Gallery4Props) => {
   const [carouselApi, setCarouselApi] = useState<CarouselApi>();
@@ -158,8 +158,9 @@ const Gallery4 = ({
                       alt={item.title}
                       className="absolute h-full w-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/5" />
-                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-primary-foreground md:p-8">
+                    <div className="absolute inset-0 bg-black/20 dark:bg-white/20" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-black/10 dark:from-black/85 dark:via-black/60 dark:to-black/30" />
+                    <div className="absolute inset-x-0 bottom-0 flex flex-col items-start p-6 text-white md:p-8">
                       <div className="mb-2 pt-4 text-xl font-bold md:mb-3 md:pt-4 lg:pt-4">
                         {item.title}
                       </div>

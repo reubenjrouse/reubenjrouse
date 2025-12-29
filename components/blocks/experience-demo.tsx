@@ -3,78 +3,80 @@ import { WorkExperience } from "@/components/ui/work-experience";
 
 const WORK_EXPERIENCE: ExperienceItemType[] = [
   {
-    id: "tech-startup",
-    companyName: "AI Tech Startup",
+    id: "harman",
+    companyName: "Harman Connected Services",
     positions: [
       {
-        id: "ml-engineer",
-        title: "Machine Learning Engineer",
-        employmentPeriod: "06.2024 — present",
+        id: "junior-associate-data-scientist",
+        title: "Junior Associate Data Scientist",
+        employmentPeriod: "07.2025 — present",
         employmentType: "Full-time",
         icon: "code",
-        description: `- Leading development of computer vision models for production systems.
-- Fine-tuning LLMs for domain-specific applications and building agentic AI workflows.
-- Implementing MLOps pipelines for model deployment and monitoring.
-- Collaborating with product team to integrate AI features into core platform.`,
+        description: `- Building an AI agent chatbot for project planning that automates Jira workflow creation.
+- Developing agentic AI system using LangGraph for multi-step task orchestration and reasoning.
+- Integrating Jira MCP (Model Context Protocol) to enable seamless issue creation and project management automation.
+- Designing conversational interfaces for natural language-based project planning and task decomposition.`,
         skills: [
-          "PyTorch",
-          "TensorFlow",
-          "LLM Fine-tuning",
           "Agentic AI",
-          "Computer Vision",
-          "MLOps",
-          "Docker",
-          "AWS",
-          "FastAPI",
+          "LangGraph",
+          "Jira MCP",
+          "LLM Integration",
+          "Chatbot Development",
           "Python",
+          "LangChain",
+          "API Integration",
+          "Project Automation",
         ],
         isExpanded: true,
       },
       {
         id: "ml-intern",
-        title: "Machine Learning Intern",
-        employmentPeriod: "01.2024 — 05.2024",
+        title: "Machine Learning Engineer Intern",
+        employmentPeriod: "01.2025 — 07.2025",
         employmentType: "Internship",
         icon: "code",
-        description: `- Developed proof-of-concept computer vision models for object detection.
-- Assisted in LLM integration and prompt engineering experiments.
-- Conducted research on model optimization techniques.
-- Contributed to internal ML tooling and documentation.`,
+        description: `- Built a no-code platform for fine-tuning LLMs with custom datasets, enabling non-technical users to train models.
+- Developed a standardized framework for supervised fine-tuning of multiple LLMs using SFTTrainer.
+- Implemented distributed training infrastructure using Kubeflow Training Operator for scalable model training.
+- Containerized ML workflows with Docker for consistent deployment across environments.`,
         skills: [
-          "PyTorch",
-          "OpenCV",
-          "YOLO",
-          "LangChain",
+          "LLM Fine-tuning",
+          "Hugging Face",
+          "SFTTrainer",
+          "Kubeflow",
+          "Docker",
           "Python",
-          "Research",
+          "Kubernetes",
+          "MLOps",
+          "Distributed Training",
         ],
       },
     ],
     isCurrentEmployer: true,
   },
   {
-    id: "mumbai-university",
-    companyName: "Mumbai University",
+    id: "ht-labs",
+    companyName: "HT Labs",
     positions: [
       {
-        id: "ml-research-intern",
-        title: "Machine Learning Research Intern",
-        employmentPeriod: "06.2023 — 12.2023",
+        id: "data-engineer",
+        title: "Data Engineer Intern",
+        employmentPeriod: "05.2024 — 07.2024",
         employmentType: "Internship",
-        icon: "education",
-        description: `- Researched and implemented Indian Sign Language translation systems using computer vision.
-- Fine-tuned deep learning models for real-time gesture recognition.
-- Collaborated with research team on accessible communication technologies.
-- Published findings and presented at university research symposium.`,
+        icon: "code",
+        description: `- Integrated 10+ APIs from OTT partner providers using Postman to build robust data pipelines.
+- Developed crawler scripts to automate data ingestion, adding 1,000+ movies and shows to the database.
+- Expanded OTTPlay content offerings by 5% through strategic data collection from non-partner providers.
+- Leveraged OpenAI APIs to create personalized content recommendations for music videos, enhancing user engagement.`,
         skills: [
-          "Computer Vision",
-          "PyTorch",
-          "OpenCV",
-          "YOLO",
-          "Object Detection",
-          "Research",
+          "API Integration",
+          "Postman",
+          "Web Scraping",
           "Python",
-          "Model Training",
+          "Data Pipelines",
+          "OpenAI API",
+          "SQL",
+          "ETL",
         ],
       },
     ],

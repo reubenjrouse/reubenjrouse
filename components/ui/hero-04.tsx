@@ -15,10 +15,10 @@ export function HeroSection04() {
             <br />
             ROUSE
           </h1>
-          <p className="text-4xl hidden xl:block absolute -bottom-12 right-5 font-light tracking-[0.25em]">
+          <p className="text-4xl hidden xl:block absolute -bottom-12 right-5 font-light tracking-[0.25em] z-30">
             ML Engineer
           </p>
-          <p className="text-4xl absolute xl:hidden -bottom-12 left-32 font-light tracking-[0.25em]">
+          <p className="text-4xl absolute xl:hidden -bottom-12 left-32 font-light tracking-[0.25em] z-30">
             ML Engineer
           </p>
         </div>
@@ -34,7 +34,7 @@ export function HeroSection04() {
               <div className="absolute hidden  md:flex left-1/2 -top-10 w-fit overflow-hidden bg-secondary">
                 <img
                   src="/images/pfp.jpg"
-                  alt="Designer portrait"
+                  alt="Portrait"
                   className="h-100 w-full object-contain"
                 />
                 <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-[0.2em]">
@@ -45,8 +45,8 @@ export function HeroSection04() {
           </div>
           <div className="flex md:hidden left-1/2 -top-10 w-full md:w-fit overflow-hidden bg-secondary">
             <img
-              src="https://raw.githubusercontent.com/aliimam-in/aliimam/refs/heads/main/apps/www/public/ai.jpg"
-              alt="Designer portrait"
+              src="/images/pfp.jpg"
+              alt="Portrait"
               className="h-100 w-full object-contain"
             />
             <div className="text-left p-2 rotate-180 [writing-mode:vertical-rl] text-xs font-medium tracking-[0.2em]">

@@ -4,7 +4,7 @@ import type { Gallery4Props } from "@/components/ui/gallery4";
 const demoData: Gallery4Props = {
   title: "Projects",
   description:
-    "Discover how leading companies and developers are leveraging modern web technologies to build exceptional digital experiences. These case studies showcase real-world applications and success stories.",
+    "Explore my projects where I attempt to solve real-world problems through hands-on machine learning and AI applications. Each project reflects practical experience in tackling diverse challenges.",
   items: [
     {
       id: "isl-project",
