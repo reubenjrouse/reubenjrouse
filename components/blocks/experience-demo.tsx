@@ -12,20 +12,20 @@ const WORK_EXPERIENCE: ExperienceItemType[] = [
         employmentPeriod: "07.2025 — present",
         employmentType: "Full-time",
         icon: "code",
-        description: `- Building an AI agent chatbot for project planning that automates Jira workflow creation.
-- Developing agentic AI system using LangGraph for multi-step task orchestration and reasoning.
-- Integrating Jira MCP (Model Context Protocol) to enable seamless issue creation and project management automation.
-- Designing conversational interfaces for natural language-based project planning and task decomposition.`,
+        description: `- Built a LangGraph agent that auto-generates Jira epics, stories, and tasks from unstructured requirement docs using RAG, saving ~3 hrs of manual ticket creation per sprint.
+- Integrated Atlassian REST APIs and MCP for conversational Jira interaction and project automation.
+- Ported Scaled-YOLOv4 to Tenstorrent TT-SIM for edge hardware execution; PR merged into the upstream repository.
+- Building a multimodal RAG ingestion pipeline (Unstructured + Qdrant) for enterprise documents spanning PDFs, tables, and images.`,
         skills: [
-          "Agentic AI",
           "LangGraph",
-          "Jira MCP",
-          "LLM Integration",
-          "Chatbot Development",
+          "RAG",
+          "Agentic AI",
+          "Atlassian REST APIs",
+          "MCP",
+          "Qdrant",
+          "Unstructured",
+          "Tenstorrent TT-SIM",
           "Python",
-          "LangChain",
-          "API Integration",
-          "Project Automation",
         ],
         isExpanded: true,
       },
@@ -35,20 +35,21 @@ const WORK_EXPERIENCE: ExperienceItemType[] = [
         employmentPeriod: "01.2025 — 07.2025",
         employmentType: "Internship",
         icon: "code",
-        description: `- Built a no-code platform for fine-tuning LLMs with custom datasets, enabling non-technical users to train models.
-- Developed a standardized framework for supervised fine-tuning of multiple LLMs using SFTTrainer.
-- Implemented distributed training infrastructure using Kubeflow Training Operator for scalable model training.
-- Containerized ML workflows with Docker for consistent deployment across environments.`,
+        description: `- Built a no-code LLM fine-tuning platform (Streamlit) supporting 10+ model families (LLaMA, Mistral, Falcon, Phi) with QLoRA, cutting per-model onboarding from ~3 hrs to ~30 min.
+- Standardized SFT pipeline using HuggingFace SFTTrainer + LoRA/QLoRA across 10+ open-source LLMs.
+- Deployed distributed training on Kubeflow Training Operator on Kubernetes with configurable data and model parallelism.
+- Served fine-tuned models via vLLM, abstracting infrastructure complexity from end users.`,
         skills: [
           "LLM Fine-tuning",
-          "Hugging Face",
+          "HuggingFace",
           "SFTTrainer",
+          "PEFT/LoRA",
+          "QLoRA",
           "Kubeflow",
-          "Docker",
-          "Python",
           "Kubernetes",
+          "vLLM",
           "MLOps",
-          "Distributed Training",
+          "Python",
         ],
       },
     ],

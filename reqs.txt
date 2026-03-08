@@ -1,0 +1,32 @@
+# Required packages for this project
+# (Generated from package.json and code imports)
+
+# Core dependencies
+@radix-ui/react-collapsible
+@radix-ui/react-dialog
+@radix-ui/react-label
+@radix-ui/react-separator
+@radix-ui/react-slot
+class-variance-authority
+clsx
+embla-carousel-react
+framer-motion
+lucide-react
+next
+themes
+next-themes
+react
+react-dom
+react-markdown
+tailwind-merge
+
+# Dev dependencies
+@tailwindcss/postcss
+@types/node
+@types/react
+@types/react-dom
+eslint
+eslint-config-next
+tailwindcss
+tw-animate-css
+typescript
