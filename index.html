@@ -5,59 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reuben — Data Scientist</title>
   <meta name="description" content="Reuben. Data Scientist working on agentic AI systems and RAG pipelines.">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        if (saved === 'light' || saved === 'dark') {
+          document.documentElement.setAttribute('data-theme', saved);
+        }
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <main class="wrap">
 
-    <!-- Sprite -->
-    <div class="sprite-wrap">
-      <img id="sprite" src="assets/wave-0.png" alt="" width="300" height="300">
-    </div>
-
     <!-- Intro -->
-    <section class="intro">
-      <h1>Reuben Rouse</h1>
+    <section class="intro js-section">
+      <h1>Reuben Rouse<span class="cursor" aria-hidden="true">_</span></h1>
+      <p class="role">Jr. Associate Data Scientist, Harman</p>
       <p>
-        Junior Data Scientist at Wipro. I work on agentic AI systems,
-        RAG pipelines, and real-time multimodal tooling. Long term,
-        I'm aiming toward research/applied science work at frontier labs.
+        I work on agentic AI systems, RAG pipelines, and real-time
+        multimodal tooling. Long term, I'm aiming toward research or
+        applied science work at frontier labs.
       </p>
     </section>
 
-    <!-- Work History + Education -->
-    <div class="two-col">
-      <section>
-        <h2>Work history</h2>
-        <ul class="list">
-          <li class="entry">
-            <span class="year">2023—present</span>
-            <a href="https://www.wipro.com/engineering/services/connected-services/">Wipro</a>
-            <span class="role">Junior Data Scientist</span>
-          </li>
-          <li class="entry">
-            <span class="year">2022—2023</span>
-            <a href="https://services.harman.com/">Harman</a>
-            <span class="role">ML Engineer Intern</span>
-          </li>
-        </ul>
-      </section>
+    <!-- Work History -->
+    <section class="js-section">
+      <h2>Work history</h2>
+      <ul class="list">
+        <li class="entry">
+          <span class="year">Jul 2025—present</span>
+          <a href="https://services.harman.com/">Harman</a>
+          <span class="role">Jr. Associate Data Scientist</span>
+          <p class="desc">Real-time hardware teardown guidance tool (Gemini Live API + OCR); LangGraph agent that auto-files Jira tickets from docs; Scaled-YOLOv4 ported to Tenstorrent silicon, merged upstream.</p>
+        </li>
+        <li class="entry">
+          <span class="year">Jan 2025—Jun 2025</span>
+          <a href="https://services.harman.com/">Harman</a>
+          <span class="role">ML Engineer Intern</span>
+          <p class="desc">No-code fine-tuning platform for 10+ LLM families; distributed training on Kubeflow, served via vLLM; cut onboarding from 3 hrs to 30 min.</p>
+        </li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Education</h2>
-        <ul class="list">
-          <li class="entry">
-            <span class="year">2021—2025</span>
-            <a href="https://www.nmims.edu/">NMIMS</a>
-            <span class="role">BTech, Artificial Intelligence</span>
-          </li>
-        </ul>
-      </section>
-    </div>
+    <!-- Education -->
+    <section class="js-section">
+      <h2>Education</h2>
+      <ul class="list">
+        <li class="entry">
+          <span class="year">2021—2025</span>
+          <a href="https://www.nmims.edu/">NMIMS</a>
+          <span class="role">BTech, Artificial Intelligence</span>
+        </li>
+      </ul>
+    </section>
 
     <!-- Projects -->
-    <section>
+    <section class="js-section">
       <h2>Projects</h2>
       <ul class="list">
         <li class="entry">
@@ -68,30 +75,27 @@
           <a href="https://github.com/reubenjrouse/endoscopy-capsule-classification">endoscopy-capsule-classification</a>
           <p class="desc">Multi-class image classification using multi-backbone architecture combining ResNet-50, Vision Transformer (DeiT), and MobileNetV3-Large</p>
         </li>
-        <li class="entry">
-          <a href="#">project-name</a>
-          <p class="desc">One-line description of what this project does.</p>
-        </li>
       </ul>
     </section>
 
     <!-- Contact -->
-    <section>
+    <section class="js-section">
       <h2>Contact</h2>
       <p><a href="mailto:reubenjrouse@gmail.com">reubenjrouse@gmail.com</a></p>
     </section>
 
     <!-- Socials -->
-    <section>
+    <section class="js-section">
       <h2>Elsewhere</h2>
       <p class="socials">
         <a href="https://github.com/reubenjrouse">GitHub</a>
         <a href="https://www.linkedin.com/in/reuben-rouse/">LinkedIn</a>
-        <a href="#">Twitter</a>
       </p>
     </section>
 
   </main>
+
+  <p class="keynav-hint" aria-hidden="true">↑↓ navigate · enter open · 1-6 jump · m theme</p>
 
   <script src="script.js"></script>
 
